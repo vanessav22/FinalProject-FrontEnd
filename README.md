@@ -49,7 +49,7 @@ We are grateful for your interest in helping the community, and we hope that you
 | Path                         | Component            | Permissions                | Behavior                                                  |
 | ---------------------------- | -------------------- | -------------------------- | --------------------------------------------------------- |
 | `/login`                     | Login                | anon only `<AnonRoute>`    | Login form, navigates to associations page.               |
-| `/signupCharity`             | Signup               | anon only  `<AnonRoute>`   | Signup form for Charities to registry, navigates to home login.                     |
+| `/signupCharity`             | Signup               | anon only  `<AnonRoute>`   | Signup form for Charities to registry, navigates to home login.                    |
 | `/signupUser`                | Signup               | anon only  `<AnonRoute>`   | Signup form for users, navigates to home login.                     |
 | `/`                          | Home                 | public  <Route>`           | Home page with nav bar.                                               |
 | `/pages/EditProfile/id`      | EditProfile          | charity only `<PrivateRoute>` | Charity profile for the current Charity where they can add or edit info.       |

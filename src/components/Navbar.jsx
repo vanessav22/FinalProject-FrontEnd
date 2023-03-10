@@ -1,28 +1,16 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../context/auth.context";
 
-function Navbar() {
-  const { loggedIn, user, logout } = useContext(AuthContext);
-
+function NavBar() {
   return (
     <nav>
-      <Link to="/"> Home |</Link>
-      {loggedIn ? (
-        <>
-        <span><strong> Hello {user.name} </strong></span>
-          <Link to="/Charities"> Charities |</Link>
+      <Link to={"/signup"}> Signup Volunteer | </Link>
 
-          <button onClick={logout}>Logout</button>
-        </>
-      ) : (
-        <>
-          <Link to="/signup"> Signup | </Link>
-          <Link to="/login"> Login </Link>
-        </>
-      )}
+      <Link to={"/signupcharity"}> Signup Charity | </Link>
+
+      <Link to={"/login"}>| Login </Link>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavBar;
